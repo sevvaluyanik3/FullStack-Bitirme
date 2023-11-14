@@ -1,0 +1,132 @@
+body {
+    background-color: rgba(255, 255, 255, 0.452);
+    text-align: center; /* metin hizalama */
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center; /*ortalanması*/
+    position: relative;
+}
+/* başlık */
+h2 {
+    margin-bottom: 30px;
+    color: #000000; 
+    font-family: 'Arial', sans-serif; /* Yazı tipi */
+    font-size: 35px;
+    font-weight: bold; /* Yazı kalınlığı (örnek: kalın) */
+}
+/*başlık altı*/
+p {
+    color: #0d033ab6; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+/* buton stili */
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+.btn {
+    background-color: #190570; /* Arka plan rengi (örnek: yeşil) */
+    color: white; /* Yazı rengi */
+    padding: 10px 20px; /* Buton içi iç boşluk (üst ve alt, sol ve sağ) */
+    border: none; /* Kenarlık olmadan */
+    border-radius: 5px; /* Köşe yuvarlaklığı */
+    cursor: pointer; /* İmleci el işareti yap */
+}
+
+/* Butona fare hover olduğunda uygulanacak stil */
+.btn:hover {
+    background-color: #2564c452; 
+}
+
+/* Butona tıklandığında uygulanacak stil */
+.btn:active {
+    background-color: #000000; 
+}
+/* veri giriş alanını */
+input { 
+    width: 90%;
+    padding: 5px; /*iç boşluk*/
+    border: 2px solid #201f1d; /*kenar*/
+    margin-bottom: 10px; /*alt boşluk*/
+    background-color: rgb(168, 166, 166);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+/* Veri giriş alanına odaklandığında uygulanacak stil */
+input:focus {
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(0, 0, 0);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Sağa ve sola uzanan bir flex container oluştur */
+    align-items: center; /* Dikeyde ortala */
+}
+form {
+    max-width: 45%; /* Form container'ının maksimum genişliği */
+    border: 2px solid #333; /* Kenarlık rengi ve kalınlığı */
+    background-color: #ffffff;
+    padding: 20px; /*iç boşluk*/
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4); /*gölgelendirme*/
+}
+/* form başlığı */
+form p {
+    color: #000000; /* Başlık rengi (örnek: kırmızı) */
+    font-family: 'Arial', sans-serif; /* Yazı tipi (örnek: Arial) */
+    font-size: 15px; /* Yazı boyutu (örnek: 24 piksel) */
+    font-weight: bold; /* Yazı kalınlığı (örnek: kalın) */
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+}
+/* Ekran genişliği 768 pikselden büyükse */
+@media (min-width: 768px) {
+    .panel {
+        width: 150%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Ekran genişliği 1024 pikselden büyükse */
+@media (min-width: 1024px) {
+    .panel {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 130px;
+    }
+}
+/* image stili*/
+.image-container {
+    padding: 40px; /* İçeriğin etrafına bir iç boşluk ekle */
+    text-align: center;
+}
+.image-container img {
+    width: 100%; /* Resmi container'ın genişliğine sığacak şekilde genişlet */
+    height: auto; /* Oranları koru, resmin oranına göre yüksekliği otomatik ayarla */
+}
+/*sonuç stili*/
+#results { 
+    border: 2px solid #333; /* Kenarlık rengi ve kalınlığı */
+    padding: 10px; /* İç boşluk */
+    margin-top: 20px; /* Üstten boşluk */
+    background-color: #e6e5e59c; 
+    color: #100069; /* Başlık rengi*/
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px;
+    font-weight: bold; 
+}

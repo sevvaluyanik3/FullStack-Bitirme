@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VKİ HESAPLAMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Ana container -->
+    <div class="container">
+        <!-- Panel container -->
+        <div class="panel">
+            <h2 class="text-center">Vücut Kitle İndeksi Hesaplama</h2>
+            <p id="introText" class="text-center">Kilonuzu ve boyunuzu girerek, vücut kitle indeksinizi hesaplayabilirsiniz.</p>
+            <!-- Flex container: Resim ve Form -->
+            <div class="flex-container">
+                <div class="image-container">
+                    <img src="images/VKİ.jpg" alt="VKİ HESAPLAMA">
+                </div>
+                <form>
+                    <div id="kilogir">
+                        <p>Kilonuzu Giriniz(KG)</p>
+                        <input id="kilo" type="number" pattern="[0-9]*" name="a" />
+                    </div>
+                    <div id="boygir">
+                        <p>Boyunuzu Giriniz(CM)</p>
+                        <input id="boy" type="number" pattern="[0-9]*" name="b"/> 
+                    </div>
+                    <!-- Hesapla Butonu -->
+                    <button type="button" class="btn" onclick="calculate()">HESAPLA</button>
+                </form>
+            </div>
+            <!-- Sonuçlar Container -->
+            <div id="results" class="text-center">VKİ HESAPLAMA SONUCU</div>
+        </div>
+    </div>
+    <!-- Javascript dosyasını bağlar -->
+    <script src="script.js"></script>
+
+</body>
+</html>
