@@ -9,3 +9,6 @@ Projemde Frontend kısmını geliştirerek bir vücut kitle indeksi uygulaması 
 .Javascript <br>
 ## Kullanılan Araç
 Bu proje Visual Studio Code üzerinden geliştirildi.
+
+## Sunum
+ [VKİ.pptx](https://github.com/sevvaluyanik3/FullStack-Bitirme/files/13370060/VKI.pptx)
